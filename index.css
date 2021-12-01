@@ -1,0 +1,75 @@
+header {
+    font-size: 2rem;
+}
+
+body {
+    background-image: url(paper.jpg); 
+    color: rgb(10, 10, 10);
+}
+
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, form button {
+
+    font-size: 2.0rem;
+    color: black;
+    background: rgba(255, 251, 227, 0.4);
+}
+
+.todo-lista {
+    margin: 0;
+    padding: 10px;
+}
+.todo-kontti li {
+    border: 2px solid black;
+    background-color:rgba(255, 251, 227, 0.4);
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    list-style-type: none;
+}
+.close {
+    float: right;
+    cursor: pointer;
+}
+.check {
+    float: left;
+    cursor: pointer;
+}
+
+.checked {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.todo-nappi {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border-radius: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #020205;
+}
+   
+.todo-nappi:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 black;
+}
+   
+.todo-nappi:active {
+    transform: scale(0.9);
+}
