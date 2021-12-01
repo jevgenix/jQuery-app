@@ -1,23 +1,29 @@
-header {
-    font-size: 2rem;
+.otsikko {
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 15px #000000;
 }
-
 body {
     background-image: url(paper.jpg); 
     color: rgb(10, 10, 10);
+
 }
 
 header, form {
-    min-height: 20vh;
+    min-height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-form input, form button {
-
+form input {
     font-size: 2.0rem;
     color: black;
-    background: rgba(255, 251, 227, 0.4);
+    background: rgba(255, 217, 0, 0.7);
+}
+
+form input::placeholder {
+    color: black;
 }
 
 .todo-lista {
@@ -26,7 +32,7 @@ form input, form button {
 }
 .todo-kontti li {
     border: 2px solid black;
-    background-color:rgba(255, 251, 227, 0.4);
+    background-color:rgba(245, 213, 35, 0.7);
     font-size: 20px;
     padding: 10px;
     margin: 10px;
@@ -43,33 +49,54 @@ form input, form button {
 
 .checked {
     text-decoration: line-through;
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 .todo-nappi {
-    position: relative;
-    display: inline-block;
-    margin: 15px;
-    padding: 10px 15px;
-    text-align: center;
-    font-size: 22px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color: black;
-    background: transparent;
-    cursor: pointer;
-    transition: ease-out 0.5s;
-    border-radius: 30px;
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: inset 0 0 0 0 #020205;
+    background: #FBCA1F;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
 }
    
 .todo-nappi:hover {
-    color: white;
-    box-shadow: inset 0 -100px 0 0 black;
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
 }
    
 .todo-nappi:active {
-    transform: scale(0.9);
+    transform: translate(0.05em, 0.05em);
+ box-shadow: 0.05em 0.05em;
 }
+
+.buttons {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: #FBCA1F;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+   }
+   
+   button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+   }
+   
+   button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+   }
+
+   

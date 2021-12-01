@@ -43,6 +43,23 @@ $(document).ready(function () {
         // SAVE CHECKED
         tallena();
     });
+
+    // extra feature, check/uncheck all!
+    $('#checkAll').click(function(){
+        console.log("check all!");
+        $('li').toggleClass('checked');
+        tallena();
+    })
+
+    $('#deleteChecked').click(function(){
+        console.log("delete all!");
+        $('.checked').fadeOut("normal", function () {
+            $('li').remove();
+        
+        tallena();
+    });
+    });
+
 });
 
 // LOCAL STORAGE USING JQUERY, CREATING ALL NEEDED VARIABLES
