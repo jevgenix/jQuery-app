@@ -54,7 +54,7 @@ $(document).ready(function () {
     $('#deleteChecked').click(function(){
         console.log("delete all!");
         $('.checked').fadeOut("normal", function () {
-            $('li').remove();
+            $('.checked').remove();
         
         tallena();
     });
