@@ -1,4 +1,3 @@
-
 // creating variable using jQuery
 $.todoLista = document.querySelector('.todo-lista');
 // after document is ready, adding fuctions
@@ -44,20 +43,19 @@ $(document).ready(function () {
         tallena();
     });
 
-    // extra feature, check/uncheck all!
+    // extra feature, switch .checked value for all li-elements
     $('#checkAll').click(function(){
         console.log("check all!");
         $('li').toggleClass('checked');
         tallena();
-    })
-
+    });
+    // extra feature,  delete all .checked li-elements
     $('#deleteChecked').click(function(){
         console.log("delete all!");
         $('.checked').fadeOut("normal", function () {
             $('.checked').remove();
-        
         tallena();
-    });
+        });
     });
 
 });
