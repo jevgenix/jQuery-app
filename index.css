@@ -4,10 +4,10 @@
     color: rgb(0, 0, 0);
     box-shadow: 5px 15px #000000;
 }
+
 body {
     background-image: url(paper.jpg); 
     color: rgb(10, 10, 10);
-
 }
 
 header, form {
